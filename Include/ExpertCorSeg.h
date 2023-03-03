@@ -1,4 +1,4 @@
-#include "Formes.h"
+#include "Shape.h"
 #include "Segment.h"
 #include "ExpertCor.h"
 
@@ -8,7 +8,7 @@ class ExpertCorSegment : public ExpertCor {
     public :
         ExpertCorSegment(ExpertCor* next) : ExpertCor(next) {}
         
-        virtual Formes * solve(const string & s) {
+        virtual Shape * solve(const string & s) {
             if (s.find("Segment") != string::npos) {
                 //On récupère le premier point
                 int pos = s.find("p1 : ");

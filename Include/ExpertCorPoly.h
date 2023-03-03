@@ -1,4 +1,4 @@
-#include "Formes.h"
+#include "Shape.h"
 #include "Polygone.h"
 #include "ExpertCor.h"
 
@@ -9,7 +9,7 @@ class ExpertCorPoly : public ExpertCor {
         ExpertCorPoly(ExpertCor* next) : ExpertCor(next) {}
         
     
-        virtual Formes * solve(const string & s) {
+        virtual Shape * solve(const string & s) {
             if (s.find("Polygone") != string::npos) {
                 //On récupère les points
                 vector<Vecteur2D> points;

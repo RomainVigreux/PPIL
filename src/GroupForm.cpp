@@ -1,5 +1,5 @@
 #include "GroupForm.h"
-#include "Form.h"
+#include "Shape.h"
 
 using namespace std;
 
@@ -9,7 +9,7 @@ GroupForm::~GroupForm() {
     }
 }
 
-Form * GroupForm::getForm(int i) const {
+Shape * GroupForm::getForm(int i) const {
     return forms[i];
 }
 

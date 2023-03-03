@@ -11,7 +11,7 @@ using namespace std;
 #include "Expert.h"
 #include "ExpertCor.h"
 #include "ExpertCorCercle.h"
-#include "ExpertCorPolygone.h"
+#include "ExpertCorPoly.h"
 #include "ExpertCorSeg.h"
 #include "GroupForm.h"
 

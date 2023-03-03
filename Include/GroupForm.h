@@ -1,18 +1,18 @@
 #include <string>
-#include "Form.h"
+#include "Shape.h"
 #include <vector>
 
 using namespace std;
 
 class GroupForm : public Shape {
     private :
-        vector<Form*> forms;
+        vector<Shape*> forms;
         string couleur;
     
     public :
 
         GroupForm(const string & couleur) : Form(couleur) {}
-        GroupForm(vector<Form*> form, const string & couleur) : Form(couleur) {
+        GroupForm(vector<Shape*> form, const string & couleur) : Form(couleur) {
             this->couleur = couleur;
             forms = form;
         }

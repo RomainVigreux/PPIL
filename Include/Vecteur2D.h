@@ -25,10 +25,10 @@ inline const Vecteur2D operator * (const double & a) const;
  * */
 inline const Vecteur2D operator - () const;
 
-..............
+/*..............
 autres méthodes 
-...................
-operator string() const;
+...................*/
+operator std::string() const;
 
 }; // classe Vecteur2D
 
@@ -56,13 +56,13 @@ return Vecteur2D(-x,-y);
 
 Vecteur2D::operator string() const
 {
-ostringstream os;
+std::ostringstream os;
 os << "( " << x <<", " << y << ")";
 return os.str();
 }
 
-ostream & operator << (ostream & os, const Vecteur2D & u)
+std::ostream & operator << (std::ostream & os, const Vecteur2D & u)
 {
-os << (string) u;
+os << (std::string) u;
 return os;
 }

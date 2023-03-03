@@ -1,4 +1,4 @@
-#include "Formes.h"
+#include "Shape.h"
 #include "Cercle.h"
 #include "ExpertCor.h"
 
@@ -8,7 +8,7 @@ class ExpertCorCercle : public ExpertCor {
     public :
         ExpertCorCercle(ExpertCor* next) : ExpertCor(next) {}
         
-        virtual Formes * solve(const string & s) {
+        virtual Shape * solve(const string & s) {
             if (s.find("Cercle") != string::npos) {
                 //On récupère le centre
                 int pos = s.find("centre : ");
