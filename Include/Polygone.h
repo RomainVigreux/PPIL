@@ -29,6 +29,8 @@ class Polygone : public Shape {
         virtual ~Polygone() {}
 
         friend ostream & operator << (ostream & os, const Polygone & p);
+
+         const void *save(const VisitorSave *v) const;
 };
 
 ostream & operator << (ostream & os, const Polygone & p) {

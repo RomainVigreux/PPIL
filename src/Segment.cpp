@@ -81,3 +81,7 @@ double Segment::getPerimetre() const {
 double Segment::getAire() const {
     return 0;
 }
+
+const void * Segment::save(const VisitorSave * v) const {
+    return v->save(this);
+}

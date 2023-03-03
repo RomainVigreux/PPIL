@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class Shape {
+class Shape : public Transforme{
     private :
         string couleur;
     
@@ -28,6 +28,8 @@ class Shape {
         virtual ~Shape() {}
 
         friend ostream & operator << (ostream & os, const Shape & s);
+
+        virtual const void * save(const VisitorSave * v) const = 0;
 
 
 };

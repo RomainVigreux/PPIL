@@ -88,3 +88,7 @@ Polygone& Polygone::addPoint(const Vecteur2D & p) {
     nbPoints++;
     return *this;
 }
+
+const void *Polygone::save(const VisitorSave *v) const {
+    return v->save(this);
+}

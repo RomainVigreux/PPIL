@@ -1,5 +1,6 @@
 #include "Cercle.h"
 #include <math.h>
+#include "VisitorSave.h"
 
 void Cercle::translation(const Vecteur2D & u) {
     centre = centre + u;
@@ -31,3 +32,9 @@ double Cercle::getPerimetre() const {
 double Cercle::getAire() const {
     return PI * pow(rayon, 2);
 }
+
+const void *Cercle::save(const VisitorSave *v) const {
+    return v->save(this);
+}
+
+

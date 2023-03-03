@@ -30,6 +30,8 @@ class Cercle : public Shape {
 
         friend ostream & operator << (ostream & os, const Cercle & c);
 
+         const void *save(const VisitorSave *v) const;
+
 };
 
 ostream & operator << (ostream & os, const Cercle & c) {

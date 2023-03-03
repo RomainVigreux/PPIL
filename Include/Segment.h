@@ -30,6 +30,8 @@ class Segment : public Shape {
 
         friend ostream & operator << (ostream & os, const Segment & s);
 
+        const void *save(const VisitorSave *v) const;
+
 };
 
 ostream & operator << (ostream & os, const Segment & s) {
