@@ -1,7 +1,11 @@
 #include "Shape.h"
+#include "Cercle.h"
 
 using namespace std;
 
 class VisitorSave{
-    virtual const void * visit(const Shape & f) = 0;
+
+public:
+
+    virtual const void * save(const Shape *f) const = 0;
 };

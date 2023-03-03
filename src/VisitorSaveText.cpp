@@ -3,10 +3,10 @@
 
 using namespace std;
 
-const void * VisitorSaveText::visit(const Form & f) const {
+const void * VisitorSaveText::visit(const Shape & f) const {
     ofstream file;
-    file.open("save.txt", ios::app);
-    file << f;
+    file.open("save.txt", fstream::app);
+    file << f << "\n";
     file.close();
     return NULL;
 }

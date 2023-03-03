@@ -7,22 +7,20 @@ void Cercle::translation(const Vecteur2D & u) {
 }
 
 void Cercle::rotation(const double & angle) {
-    Vecteur2D p(rayon, 0);
-    p.rotation(angle);
-    centre.rotation(angle);
+
 }
 
 void Cercle::homothetie(const double & k) {
     rayon *= k;
-    centre.homothetie(k);
+
 }
 
 Vecteur2D Cercle::getMinXMinY() const {
-    return Vecteur2D(centre.getX() - rayon, centre.getY() - rayon);
+    return Vecteur2D(centre.x-rayon, centre.y-rayon);
 }
 
 Vecteur2D Cercle::getMaxXMaxY() const {
-    return Vecteur2D(centre.getX() + rayon, centre.getY() + rayon);
+    return Vecteur2D(centre.x+rayon, centre.y+rayon);
 }
 
 double Cercle::getPerimetre() const {

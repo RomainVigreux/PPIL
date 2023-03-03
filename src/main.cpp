@@ -16,9 +16,8 @@ using namespace std;
 #include "GroupForm.h"
 
 int main (){
-    Shape * f = new Segment(Vecteur2D(1, 2), Vecteur2D(3, 4), "red");
-    Shape * f2 = new Cercle(Vecteur2D(1, 2), 3, "blue");
-    Shape * f3 = new Polygone(Vecteur2D(1, 2), Vecteur2D(3, 4), Vecteur2D(5, 6), "green");
+    Shape *rond, *Segment;
+    rond = new Cercle(10,10,15,"bleu");
 
     GroupForm * g = new GroupForm();
     g->add(f);

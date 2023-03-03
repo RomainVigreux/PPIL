@@ -21,7 +21,7 @@ const string & GroupForm::getColor() const {
     return couleur;
 }
 
-GroupForm & GroupForm::addForm(const Form & f) {
+GroupForm & GroupForm::addForm(const Shape & f) {
     forms.push_back(f.clone());
     return *this;
 }
@@ -53,20 +53,16 @@ double GroupForm::calculAir() const {
 }
 
 Vecteur2D GroupForm::calculCentreGravite() const {
-    Vecteur2D centreGravite;
-    for (int i = 0; i < forms.size(); i++) {
-        centreGravite += forms[i]->getAire() * forms[i]->getCentreGravite();
-    }
-    return centreGravite / calculAir();
+    return Vecteur2D();
 }
 
 GroupForm::operator string() const {
    ostringstream os;
 
     os << "groupe : [ ";
-    for (int i = 0; i < formes.size(); ++i)
+    for (int i = 0; i < forms.size(); ++i)
     {
-        os << formes[i] << " ; ";
+        os << forms[i] << " ; ";
     }
     os << " ] " << this->couleur << " I " << this->getMinXMinY() << " I " << this->getMaxXMaxY();
     return os.str();
@@ -85,29 +81,23 @@ void GroupForm::homothetie(const double & k) {
 }
 
 Vecteur2D GroupForm::getMinXMinY() const {
-    Vecteur2D minXMinY = forms[0]->getMinXMinY();
+    double minX = forms[0]->getMinXMinY().x;
+    double minY = forms[0]->getMinXMinY().y;
     for (int i = 1; i < forms.size(); i++) {
-        if (forms[i]->getMinXMinY().getX() < minXMinY.getX()) {
-            minXMinY.setX(forms[i]->getMinXMinY().getX());
-        }
-        if (forms[i]->getMinXMinY().getY() < minXMinY.getY()) {
-            minXMinY.setY(forms[i]->getMinXMinY().getY());
-        }
+        if(forms[i]->getMaxXMaxY().x < minX) minX = forms[i]->getMaxXMaxY().x;
+        if(forms[i]->getMaxXMaxY().y < minX) minX = forms[i]->getMaxXMaxY().y;
     }
-    return minXMinY;
+    return Vecteur2D(minX, minY);
 }
 
 Vecteur2D GroupForm::getMaxXMaxY() const {
-    Vecteur2D maxXMaxY = forms[0]->getMaxXMaxY();
+    double maxX = forms[0]->getMaxXMaxY().x;
+    double maxY = forms[0]->getMaxXMaxY().y;
     for (int i = 1; i < forms.size(); i++) {
-        if (forms[i]->getMaxXMaxY().getX() > maxXMaxY.getX()) {
-            maxXMaxY.setX(forms[i]->getMaxXMaxY().getX());
-        }
-        if (forms[i]->getMaxXMaxY().getY() > maxXMaxY.getY()) {
-            maxXMaxY.setY(forms[i]->getMaxXMaxY().getY());
-        }
+       if(forms[i]->getMaxXMaxY().x < maxX) maxX = forms[i]->getMaxXMaxY().x;
+       if(forms[i]->getMaxXMaxY().y < maxX) maxX = forms[i]->getMaxXMaxY().y;
     }
-    return maxXMaxY;
+    return Vecteur2D(maxX, maxY);
 }
 
 

@@ -12,7 +12,7 @@ class Cercle : public Shape {
 
     public :
         Cercle();
-        Cercle(const Vecteur2D & centre, const double & rayon, const string & couleur) : Shape(couleur), centre(centre), rayon(rayon) {}
+        Cercle(int x, int y, double rayon, const string& color = " ") : Shape(color), rayon(rayon),centre(x,y) {}
         Cercle(const Cercle & c) : Shape(c.couleur), centre(c.centre), rayon(c.rayon) {}
 
         virtual void translation(const Vecteur2D & u);
