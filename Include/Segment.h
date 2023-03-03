@@ -1,6 +1,7 @@
 #include "Vecteur2D.h"
 #include <string>
 #include <math.h>
+#include <iostream>
 #include "Shape.h"
 
 using namespace std;

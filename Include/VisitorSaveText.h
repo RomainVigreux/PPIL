@@ -5,5 +5,5 @@
 
 class VisitorSaveText : public VisitorSave {
     public :
-        const void *visit (const Form &f) const;
-}
+        const void *visit (const Shape &f) const;
+};

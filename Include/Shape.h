@@ -1,14 +1,16 @@
 #include <string>
+#include <iostream>
 #include "Tranforme.h"
 #include "Vecteur2D.h"
+#include "VisitorSave.h"
 
 using namespace std;
 
 class Shape : public Transforme{
-    private :
-        string couleur;
-    
-    public :
+
+protected:
+    string couleur;
+public :
 
         Shape();
         Shape(const string & couleur) : couleur(couleur) {}
@@ -32,12 +34,15 @@ class Shape : public Transforme{
         virtual const void * save(const VisitorSave * v) const = 0;
 
 
+    Shape *solve(const string &basicString);
 };
 
 ostream & operator << (ostream & os, const Shape & s) {
     os << "couleur : " << s.couleur << endl;
     return os;
 }
+
+
 
 
 

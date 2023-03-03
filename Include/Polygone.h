@@ -1,6 +1,8 @@
 #include "Vecteur2D.h"
 #include <string>
 #include <math.h>
+#include <vector>
+#include <iostream>
 #include "Shape.h"
 
 using namespace std;

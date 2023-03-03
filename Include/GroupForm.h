@@ -1,6 +1,7 @@
 #include <string>
 #include "Shape.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -11,18 +12,18 @@ class GroupForm : public Shape {
     
     public :
 
-        GroupForm(const string & couleur) : Form(couleur) {}
-        GroupForm(vector<Shape*> form, const string & couleur) : Form(couleur) {
+        GroupForm(const string & couleur) : Shape(couleur) {}
+        GroupForm(vector<Shape*> form, const string & couleur) : Shape(couleur) {
             this->couleur = couleur;
             forms = form;
         }
 
         virtual ~GroupForm();
-        forms *getForm(int i) const;
+        Shape *getForm(int i) const;
         void setColor(const string & couleur);
         const string & getColor() const;
 
-        GroupForm &addForm(const Form & f);
+        GroupForm &addForm(const Shape & f);
 
         virtual void translation(const Vecteur2D & u);
         virtual void rotation(const double & angle);

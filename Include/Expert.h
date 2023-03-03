@@ -4,5 +4,5 @@ using namespace std;
 
 class Expert {
     public :
-        virtual Formes * solve(const string & s) = 0;
-}
+        virtual Shape * solve(const string & s) = 0;
+};

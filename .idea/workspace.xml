@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -17,7 +20,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79881c55-6006-4b72-886c-ff41a763ff18" name="Changes" comment="" />
+    <list default="true" id="79881c55-6006-4b72-886c-ff41a763ff18" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/Cercle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Cercle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/Expert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Expert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/ExpertCor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/ExpertCor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/ExpertCorCercle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/ExpertCorCercle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/GroupForm.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/GroupForm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/Polygone.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Polygone.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/Segment.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Segment.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/Shape.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Shape.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/Vecteur2D.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Vecteur2D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/VisitorSave.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/VisitorSave.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Include/VisitorSaveText.h" beforeDir="false" afterPath="$PROJECT_DIR$/Include/VisitorSaveText.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,16 +69,20 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "last_opened_file_path": "C:/Users/Pierre/Documents/GitHub/PPIL",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="PPIL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPIL" TARGET_NAME="PPIL" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPIL" RUN_TARGET_NAME="PPIL">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PPIL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPIL" TARGET_NAME="PPIL" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPIL" RUN_TARGET_NAME="PPIL">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -76,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677841301293</updated>
       <workItem from="1677841302671" duration="1309000" />
+      <workItem from="1677858300191" duration="710000" />
     </task>
     <servers />
   </component>

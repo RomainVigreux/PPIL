@@ -3,5 +3,5 @@
 using namespace std;
 
 class VisitorSave{
-    virtual const void * visit(const Form & f) = 0;
+    virtual const void * visit(const Shape & f) = 0;
 };

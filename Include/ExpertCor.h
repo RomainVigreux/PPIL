@@ -3,17 +3,17 @@
 class ExpertCor : public Expert {
     
     private :
-        Formes * formes;
+        Shape * formes;
         ExpertCor * next;
     public :
         //Design Pattern Chain of Responsibility
         ExpertCor(ExpertCor* next) : next(next) {}
 
-        virtual Formes * solve(const string & s) {
-            Formes * f = formes->solve(s);
+        virtual Shape * solve(const string & s) {
+            Shape * f = formes->solve(s);
             if (f == NULL) {
                 return next->solve(s);
             }
             return NULL;
         }
-}
+};

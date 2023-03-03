@@ -1,3 +1,5 @@
+#include <sstream>
+
 template <class T>
 inline const T operator - (const T & u, const T & v)
 {
@@ -17,7 +19,7 @@ inline explicit Vecteur2D(const double & x = 0, const double & y = 0);
  * DONNEES : s respectant le format "(  nombre réel, nombre réel)"
  *
  * */
-inline Vecteur2D(const char * s);
+inline Vecteur2D(const char *s, double d);
 inline const Vecteur2D operator + (const Vecteur2D & u) const;
 inline const Vecteur2D operator * (const double & a) const;
 /**
@@ -54,7 +56,7 @@ inline const Vecteur2D Vecteur2D::operator - () const
 return Vecteur2D(-x,-y);
 }
 
-Vecteur2D::operator string() const
+Vecteur2D::operator std::string() const
 {
 std::ostringstream os;
 os << "( " << x <<", " << y << ")";

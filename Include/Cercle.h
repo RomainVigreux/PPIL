@@ -8,7 +8,7 @@ class Cercle : public Shape {
     private :
         Vecteur2D centre;
         double rayon;
-        const static double PI = 3.14159265358979323846;
+        constexpr const static double PI = 3.14159265358979323846;
 
     public :
         Cercle();
