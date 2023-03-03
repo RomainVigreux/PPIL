@@ -23,7 +23,7 @@ class GroupForm : public Shape {
         void setColor(const string & couleur);
         const string & getColor() const;
 
-        GroupForm &addForm(const Shape & f);
+        GroupForm &addShape(const Shape* f);
 
         virtual void translation(const Vecteur2D & u);
         virtual void rotation(const double & angle);

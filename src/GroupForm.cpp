@@ -21,7 +21,7 @@ const string & GroupForm::getColor() const {
     return couleur;
 }
 
-GroupForm & GroupForm::addForm(const Shape & f) {
+GroupForm & GroupForm::addShape(const Shape & f) {
     forms.push_back(f.clone());
     return *this;
 }

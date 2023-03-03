@@ -23,15 +23,15 @@ public :
         virtual Vecteur2D getMaxXMaxY() const = 0;
 
         void setCouleur(const string & couleur) { this->couleur = couleur; }
-        virtual double getPerimetre() const = 0;
-        virtual double getAire() const = 0;
+        double getPerimetre() const;
+        double getAire() const;
         virtual Shape * clone() const = 0;
 
         virtual ~Shape() {}
 
         friend ostream & operator << (ostream & os, const Shape & s);
 
-        virtual const void * save(const VisitorSave * v) const = 0;
+         const void * save(const VisitorSave * v) const;
 
 
     Shape *solve(const string &basicString);

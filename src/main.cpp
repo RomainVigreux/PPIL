@@ -19,14 +19,12 @@ int main (){
     Shape *rond, *Segment;
     rond = new Cercle(10,10,15,"bleu");
 
-    GroupForm * g = new GroupForm();
-    g->add(f);
-    g->add(f2);
-    g->add(f3);
+    GroupForm * g = new GroupForm("Red");
+    g->addShape(rond);
 
-    cout << "Cercle : " << f2 << endl;
-    f2->translation(Vecteur2D(1, 1));
-    cout << "Cercle : " << f2 << endl;
+
+    cout << "Cercle : " << rond << endl;
+
 
     
 }
